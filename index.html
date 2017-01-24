@@ -2,207 +2,48 @@
 <html>
     
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BRACKETSIN KÄYTÖN ALOITUS</title>
-        <meta name="description" content="Vuorovaikutteinen aloitusopas Bracketsille.">
-        <link rel="stylesheet" href="main.css">
+        <meta charset"UTF-8"/>
+        <meta name="author" content="Teemu Teekkari"/>
+        <meta name= "description" content="A simple webpage lorem ipsum..."
+        <link rel="shortcut.icon" href="assets/favicon.ico"/>
+        <title>Ferrari <3 Otaniemi</title>
     </head>
+        
     <body>
-        
-        <h1>BRACKETSIN KÄYTÖN ALOITUS</h1>
-        <h2>Tämä on oppaasi!</h2>
-        
-        <!--
-            TEHTY <3:LLA JA JAVASCRIPTILLÄ
-        -->
-        
-        <p>
-            Tervetuloa käyttämään Bracketsia, nykyaikaista, avoimen lähdekoodin koodieditoria, joka ymmärtää
-            web-suunnittelun. Se on kevyt mutta silti tehokas: koodieditori, joka sulauttaa visuaaliset työkalut suoraan
-            editoriin, niin että saat oikean määrän apua silloin, kun haluat sitä.
-        </p>
-        
-        <!--
-            MIKÄ BRACKETS ON?
-        -->
-        <p>
-            <em>Brackets on erityyppinen editori.</em>
-            Bracketsissa on joitakin ainutlaatuisia ominaisuuksia, kuten pikamuokkaus, reaaliaikainen esikatselu ja
-            muita, joita et voi löytää muista editoreista. Lisäksi Brackets on kirjoitettu JavaSciptillä, HTML:llä ja
-            CSS:llä. Se tarkoittaa, että useimmilla Bracketsin käyttäjistä on riittävät taidot muokata ja laajentaa
-            editoria. Itse asiassa käytämme Bracketsia joka päivä sen itsensä kehitykseen. Oppiaksesi lisää siitä,
-            kuinka käyttää avainominaisuuksia, jatka lukemista.
-        </p>
-        
-        <!--
-            ALOITUS OMIEN TIEDOSTOJESI KANSSA
-        -->
-        
-        <h3>Projektit Bracketsissa</h3>
-        <p>
-            Muokataksesi omaa koodiasi Bracketsia käyttäen voit vain avata tiedostosi sisältävän kansion. Brackets pitää
-            nykyistä avointa kansiota ”projektina”; ominaisuudet, kuten koodivihjeet, esikatselu ja pikamuokkaus,
-            käyttävät vain parhaillaan avoinna olevan kansion tiedostoja.
-        </p>
-        
-        <samp>
-            Heti kun olet valmis luopumaan tästä näyteprojektista ja muokkaamaan omaa koodiasi, voit käyttää vasemman
-            sivupalkin pudotusvalikkoa kansioiden vaihtamiseen. Juuri nyt pudotusvalikossa lukee ”Aloitus”. Tämä on
-            kansio, joka sisältää tiedoston, jota tarkastelet juuri nyt. Avaa oma kansiosi napsauttamalla
-            pudotusvalikkoa ja valitsemalla ”Avaa kansio…”.
-            Voit käyttää pudotusvalikkoa myös myöhemmin vaihtaaksesi takaisin kansioihin, jotka olet avannut aiemmin,
-            sisältäen tämän näyteprojektin.
-        </samp>
-        
-        <!--
-            YHTEYS HTML:N, CSS:N JA JAVASCRIPTIN VÄLILLÄ
-        -->
-        <h3>Pikamuokkaus CSS:lle ja JavaScriptille</h3>
-        <p>
-            Ei lisää dokumenttien välillä vaihtamista tai asiayhteyden hukkaamista. Muokatessasi HTML:ää käytä
-            näppäinyhdistelmää <kbd>Cmd/Ctrl + E</kbd> avataksesi upotetun pikaeditorin, joka näyttää kaiken tiedostoon
-            liittyvän CSS:n. Muokkaa CSS:ääsi, paina <kbd>ESC</kbd>-näppäintä ja olet taas muokkaamassa HTML:ää, tai
-            yksinkertaisesti jätä CSS-säännöt auki, ja niistä tulee osa HTML-editoriasi. Jos painat
-            <kbd>ESC</kbd>-näppäintä pikaeditorin ulkopuolella, ne kaikki sulkeutuvat. Pikaeditori löytää myös LESS- ja
-            SCSS-tiedostoissa määritellyt säännöt, sisältäen sisäkkäiset sellaiset.
-        </p>
-        
-        <samp>
-            Haluatko nähdä sen toiminnassa? Aseta kohdistin alla olevaan <!-- <samp> --> -tägiin ja paina
-            <kbd>Cmd/Ctrl + E</kbd>. Sinun pitäisi nähdä, kun CSS-pikaeditori ilmestyy alapuolelle näyttäen CSS-säännön,
-            joka pätee siihen. Pikamuokkaus toimii toki myös class- ja id-attribuuttien kanssa. Voit käyttää sitä myös
-            LESS- ja SCSS-tiedostojesi kanssa.
-            
-            Voit luoda uusia sääntöjä samalla tavalla. Napsauta yhtä alaosan <!-- <p> --> -tägeistä ja paina
-            <kbd>Cmd/Ctrl + E</kbd>. Sille ei ole sääntöjä juuri nyt, mutta voit napsauttaa Uusi sääntö -painiketta
-            lisätäksesi uuden säännön <!-- <p> --> -tägeille.
-        </samp>
-        
-        <a href="screenshots/quick-edit.png">
-            <img alt="Kuvankaappaus, jossa näkyy CSS:n pikamuokkaus" src="screenshots/quick-edit.png" />
-        </a>
-        
-        <p>
-            Voit käyttää samaa näppäinyhdistelmää muokataksesi myös muita asioita - kuten JavaScriptin funktioita,
-            värejä ja animaatioiden ajoitusfunktioita - ja me lisäämme koko ajan yhä enemmän ominaisuuksia.
-        </p>
-        <p>
-            Toistaiseksi sisäeditorit eivät voi olla sisäkkäin, joten voit käyttää pikamuokkausta vain silloin, kun
-            kohdistin on täyskokoisessa editorissa.
-        </p>
-        
-        <!--
-            ESIKATSELU
-        -->
-        <h3>Esikatsele HTML:n ja CSS:n muutoksia reaaliaikaisesti selaimessa</h3>
-        <p>
-            Tiedäthän sen ”tallenna ja päivitä -tanssin”, jota olemme harrastaneet vuosia? Se, jossa tehdään muutoksia
-            editorissa, painetaan tallenna, vaihdetaan selaimeen ja sitten päivitetään, jotta tulos tulee viimein
-            näkyville? Bracketsissa sinun ei tarvitse harrastaa tätä tanssia.
-        </p>
-        <p>
-            Brackets avaa <em>reaaliaikaisen yhteyden</em> paikalliseen selaimeesi ja vie HTML:n CSS:n päivitykset
-            samalla kun kirjoitat! Saatat olla jo tehnyt jotakin tämän kaltaista selainpohjaisilla työkaluilla, mutta
-            Bracketsin kanssa ei tarvitse kopioida ja liittää lopullista koodia takaisin editoriin. Koodisi suoritetaan
-            selaimessasi, mutta se sijaitsee editorissasi!
-        </p>
-        
-        <h3>Korosta HTML-elementtejä ja CSS-sääntöjä reaaliaikaisesti</h3>
-        <p>
-            Brackets tekee helpoksi nähdä, kuinka muutoksesi HTML:ssä ja CSS:ssä vaikuttavat sivuun. Kun kohdistin on
-            CSS-säännöllä, Brackets korostaa kaikki siihen liittyvät elementit selaimessa. Samalla tavoin muokattaessa
-            HTML-tiedostoa Brackets korostaa vastaavat HTML-elementit selaimessa.
-        </p>
-        
-        <samp>
-            Jos sinulla on Google Chrome asennettuna, voit kokeilla tätä itse. Napsauta Brackets-ikkunan oikeassa
-            yläkulmassa sijaitsevaa salamakuvaketta tai paina <kbd>Cmd/Ctrl + Alt + P</kbd>. Kun esikatselu on käytössä
-            HTML-dokumentissa, kaikkia linkitettyjä CSS-dokumentteja voi muokata reaaliajassa. Kuvake muuttuu harmaasta
-            kultaiseksi, kun Brackets muodostaa yhteyden selaimeesi.
-            
-            Aseta kohdistin nyt yläpuolella olevaan <!-- <img> --> -tägiin. Huomaa sininen korostus, joka ilmestyy kuvan
-            ympärille Chromessa. Käytä seuraavaksi <kbd>Cmd/Ctrl + E</kbd> -näppäinyhdistelmää avataksesi määritellyt
-            CSS-säännöt. Yritä muuttaa reunaviivan kokoa arvosta 10px arvoon 20px tai vaihtaa taustaväriä arvosta
-            ”transparent” arvoon ”hotpink”. Jos Brackets ja selain ovat näytölläsi vierekkäin, näet muutosten
-            heijastuvan välittömästi selaimeesi. Siistiä, eikö?
-        </samp>
-        
-        <p class="note">
-            Nykyisellään Brackets tukee esikatselua vain HTML:lle ja CSS:lle. Kuitenkin jo nykyisessä versiossa
-            muutokset JavaScript-tiedostoihin päivitetään automaattisesti tallentaessasi tiedoston. Työskentelemme
-            parhaillaan esikatselun tuomiseksi JavaScriptille. Esikatselu on myös mahdollista vain Google Chromella,
-            mutta toivomme pystyvämme tuomaan tämän toiminnon kaikille pääselaimille tulevaisuudessa.
-        </p>
-        
-        <h3>Pikanäkymä</h3>
-        <p>
-            Niille meistä, jotka eivät vielä osaa ulkoa värien vastineita HEX- tai RGB-arvoille, Brackets tekee nopeaksi
-            ja helpoksi nähdä täsmälleen, mitä väriä on käyttämässä. Kerta kaikkiaan osoita mitä tahansa väriarvoa tai
-            liukuväriä joko CSS:ssä tai HTML:ssä, ja Brackets näyttää esikatselun tästä väristä tai liukuväristä
-            automaattisesti. Sama tulee kuviin: osoita yksinkertaisesti kuvalinkkiä Brackets-editorissa ja se näyttää
-            pienen esikatselukuvan tästä kuvasta.
-        </p>
-        
-        <samp>
-            Kokeile pikanäkymää itse asettamalla kohdistimesi tämän dokumentin yläosassa sijaitsevaan <!-- <body> -->
-            -tägiin ja painalla <kbd>Cmd/Ctrl + E</kbd> avataksesi CSS-pikaeditorin. Nyt yksinkertaisesti osoita mitä
-            tahansa CSS:n väriarvoista. Voit myös nähdä sen toiminnassa liukuväreissä avaamalla CSS-pikaeditorin
-            <!-- <html> --> -tägille ja osoittamalla mitä tahansa taustakuva-arvoista. Kokeile kuvan esikatselua
-            asettamalla osoittimesi tässä dokumentissa aiemmin esiintyneen kuvankaappauskuvan päälle.
-        </samp>
-        
-        <h3>Tarvitsetko jotakin muuta? Kokeile laajennusta!</h3>
-        <p>
-            Sen kaiken hyvän lisäksi, jota Bracketsiin on rakennettu, on suuri ja kasvava laajennuskehittäjien
-            yhteisömme tehnyt satoja laajennuksia, jotka lisäävät hyödyllisiä toimintoja. Jos on jotakin, jota tarvitset
-            ja jota Brackets ei tarjoa, enemmän kuin todennäköisesti joku on tehnyt laajennuksen siihen. Selaa
-            saatavilla olevien laajennusten luetteloa tai hae siitä valitsemalla <strong>Tiedosto &gt; Laajennusten
-            hallinta</strong> ja napsauttamalla ”Saatavilla”-välilehteä. Kun löydät haluamasi laajennuksen, napsauta
-            vain ”Asenna”-painiketta sen vierestä.
-        </p>
-        
-        <!--
-            KERRO MEILLE, MITÄ AJATTELET
-        -->
-        <h2>Lähde mukaan</h2>
-        <p>
-            Brackets on avoimen lähdekoodin projekti. Web-kehittäjät ympäri maailmaa osallistuvat paremman koodieditorin
-            kehittämiseen. Vieläkin enemmän kehitetään laajennuksia, jotka laajentavat Bracketsin kykyjä. Kerro meille,
-            mitä ajattelet. Jaa ideasi tai osallistu suoraan projektiin.
-        </p>
-        <ul>
-            <li><a href="http://brackets.io">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets-tiimin blogi</a></li>
-            <li><a href="https://github.com/adobe/brackets">Brackets GitHubissa</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets-laajennusten rekisteri</a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Brackets-wiki</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets-kehittäjien postituslista</a></li>
-            <li><a href="https://twitter.com/brackets">@brackets Twitterissä</a></li>
-            <li>Rupattele Brackets-kehittäjien kanssa IRC:ssä: <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets Freenodessa</a></li>
-        </ul>
-        
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com">Home</a></li>
+                <li><a href="#" >Portfolio</a></li>
+                <li><a href ="#" >Posts</a></li>
+            </ul>
+        </nav>
+        <header>
+        <h1>ferrarisivu</h1>
+        <img src="http://st.motortrend.com/uploads/sites/10/2015/09/2013-Ferrari-458-Italia-Front-Three-Quarters-View.jpg?interpolation=lanczos-none&fit=around%7C120%3A80&crop=120%3A80%3B%2A%2C%2A"/>
+        </header>
+        <section>
+            <article>
+                <h2>My first blogpost</h2> 
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat scelerisque mi. Nulla sodales auctor ullamcorper. Etiam aliquam, turpis at ullamcorper cursus, odio dolor dapibus enim, quis luctus purus neque eu metus. Vestibulum porttitor aliquam maximus.<br> Donec eget dictum urna, quis auctor felis. Curabitur in faucibus quam, sit amet auctor sem. Maecenas sodales ut nisl ut dignissim. Pellentesque at velit rutrum, maximus orci sed, accumsan purus. Pellentesque pellentesque vel tortor eget volutpat. Donec finibus facilisis nisi in varius. Duis porta metus non nibh semper, ac iaculis quam aliquam. Donec lectus libero, scelerisque sit amet justo quis, aliquam hendrerit arcu.
+                Integer lacus lacus, luctus id luctus vitae, pellentesque sed neque. Fusce sed accumsan purus. Ut blandit efficitur tellus, eu sodales libero rhoncus et. Mauris lacinia magna massa, in vestibulum sem blandit in. Quisque pharetra congue neque, ultricies aliquet eros vestibulum et. Aliquam erat volutpat. Nullam id iaculis enim. Aenean at venenatis justo. Nulla feugiat, justo sit amet consequat lobortis, risus lacus ultricies nulla, ut fringilla nunc velit feugiat leo. Aliquam pharetra nisi vitae odio pellentesque vestibulum. Mauris tempus, risus quis rhoncus dignissim, augue purus semper risus, in facilisis diam mauris placerat elit. Cras feugiat sem vel venenatis tristique. </p>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUhv3B_O82mQMyVUdrLR9RjrW5zir6YACvx9_3Z-vpvkPbYcRj" alt="Could not load picture", width="500px">
+            </article>
+            <article>
+                <h2>My second blogpost</h2>
+                <p>Mauris et rutrum eros. Vestibulum scelerisque enim ligula, a accumsan erat aliquam et. Integer blandit est quis sem egestas, eu porta risus finibus. Pellentesque interdum eu neque in interdum. Sed vel enim non purus varius eleifend. Proin maximus tellus non congue pretium. Integer tristique felis at lorem vulputate vestibulum. Aliquam porttitor nec elit ut aliquet. Cras at ultricies nibh, vel blandit lorem. Cras semper justo lorem, finibus egestas justo pulvinar vitae. </p><iframe width="560" height="315" src="https://www.youtube.com/embed/90kifV4_Fyc" frameborder="0" allowfullscreen></iframe>
+            </article>
+        </section>
+        <aside>
+            <article>
+                <h3>Most read posts:</h3>
+                <li><a href= "#">My third blogpost</a></li>
+                <li>Hipster ipsum</li>
+                <li>Lipsum hipsum</li>
+                <li>Bacom eggsum</li>
+            </article>
+        </aside>
+        <footer>
+            <p>Copyright 2017 by Teemu Teekkari</p>
+        </footer>
     </body>
 </html>
-<!--
-
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->
