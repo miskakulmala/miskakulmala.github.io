@@ -96,8 +96,11 @@ ul.topnav li.icon {
 @media screen and (min-width: 40.5em) {
   .main {
     width: 50%;
-    float: none;
+    float: left;
   }
+  .footer {
+    vertical-align: middle;
+    }
 }
 
 @viewport { 
@@ -132,6 +135,10 @@ ul.topnav li a:hover {
     background-color: #555;
 }
 
+ul.topnav li.icon {
+    display: none;
+}
+
 
 
 footer {
@@ -160,4 +167,5 @@ footer img {
 footer img:hover {
     opacity: 0.5;
 }
+
 
