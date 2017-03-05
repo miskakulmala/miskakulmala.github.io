@@ -19,7 +19,7 @@ function nextSlide() {
     display();
 };
 
-function switch() {
+function switchA() {
     'use strict';
     setInterval(function () {
         nextSlide();
@@ -27,9 +27,8 @@ function switch() {
 };
 
 window.onload = function () { 
-    'use strict';
      display();
      nextSlide();
-     switch();
+     switchA();
 };
 
