@@ -1,7 +1,7 @@
 var muuttuja = 1;
 
 $.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
-    console.log(JSON.stringify(data, undefined, 2))
+    console.log(data)
 });
 
 /* function display() {
