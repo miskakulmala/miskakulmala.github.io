@@ -1,0 +1,25 @@
+{
+    "uutiset": [
+
+        {
+            "otsikko": "Minun uutinen",
+            "sisältö": "Moi kaikki",
+            "päivämäärä": "23.1"
+            },
+        {
+            "otsikko": "Minun uutinen 2",
+            "sisältö": "Moi kaikki 2",
+            "päivämäärä": "3.1"
+            },
+
+
+        {
+            "otsikko": "Minun uutinen 3",
+            "sisältö": "Moi kaikki 3",
+            "päivämäärä": "2.1"
+            }
+
+
+        ]
+
+}
