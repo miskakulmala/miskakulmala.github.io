@@ -57,7 +57,7 @@
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
-    font-family: "Roboto", arial, serif;
+    font-family: 'Roboto Condensed', arial, serif;
 }
 
 ul.topnav li a: hover {
