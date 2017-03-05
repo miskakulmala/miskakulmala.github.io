@@ -1,18 +1,15 @@
 var muuttuja = 1;
 
-window.onload = function () {
-    'use strict';
-    $.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
-    console.log(data);
+$.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
+    console.log(JSON.stringify(data, undefined, 2))
 });
-};
 
-function display() {
+/* function display() {
     'use strict';
     $.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
-        $('#otsikko').html(data.uutiset[index].otsikko);
-        $('#paivamaara').html(data.uutiset[index].paivamaara);
-        $('#sisalto').html(data.uutiset[index].sisalto);
+        $('#otsikko').html(data.uutiset[muuttuja].otsikko);
+        $('#paivamaara').html(data.uutiset[muuttuja].paivamaara);
+        $('#sisalto').html(data.uutiset[muuttuja].sisalto);
     });
 }
 
@@ -22,4 +19,4 @@ function switchA() {
         nextSlide();
     }, 3000);
 }
-    
+    */
