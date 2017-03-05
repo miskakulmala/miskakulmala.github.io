@@ -35,10 +35,16 @@
         
         <section>
             <div class="main">
-                <h4 id="otsikko"></h4>
-                <h5 id="päivämäärä"></h5>
+                <h3 id="otsikko"></h3>
+                <h4 id="päivämäärä"></h4>
                 <p id="sisältö"></p>
+                <button id="vasen"  onclick="previous()">Edellinen</button>
+                <button id="pause" onclick="change(this.id);
+                                                    stop();" >Pysäytä</button>
+                <button id="oikea" onclick="next()">Seuraava</button>
             </div>
+            
+            
             
             <article id= "interview" class="main">
                 <h2>Haastis</h2>

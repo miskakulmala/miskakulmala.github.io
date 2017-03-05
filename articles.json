@@ -2,21 +2,21 @@
     "uutiset": [
 
         {
-            "otsikko": "Minun uutinen",
-            "sisältö": "Moi kaikki",
-            "päivämäärä": "23.1"
+            "otsikko": "Hiilen aika on nyt",
+            "sisältö": "Ut cursus vehicula tincidunt. In auctor placerat libero, non volutpat diam consectetur nec. Nunc porttitor tincidunt ante a ornare. Proin id est augue. Donec ut nibh et mi laoreet convallis non non diam. Etiam imperdiet volutpat sem, sagittis volutpat nisi aliquet et. Nulla facilisi. Suspendisse nec neque sit amet nisi fringilla accumsan non at nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In pharetra accumsan elit. Etiam id sodales tortor, vitae pharetra sapien.",
+            "päivämäärä": "23.2."
             },
         {
-            "otsikko": "Minun uutinen 2",
-            "sisältö": "Moi kaikki 2",
-            "päivämäärä": "3.1"
+            "otsikko": "Kivihiili - tosimiehen valinta",
+            "sisältö": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ac iaculis nisl, sit amet pretium ligula. Mauris tempus et eros vel auctor. Proin elementum viverra enim, eu molestie nunc placerat vitae. Nullam facilisis nulla at sem viverra euismod. Vivamus et nunc porttitor, semper eros at, pharetra sem. Mauris dapibus varius turpis, efficitur pharetra ligula finibus at. Donec consectetur iaculis sollicitudin. Nunc quis nulla ex.",
+            "päivämäärä": "5.2."
             },
 
 
         {
-            "otsikko": "Minun uutinen 3",
-            "sisältö": "Moi kaikki 3",
-            "päivämäärä": "2.1"
+            "otsikko": "Ei ole kiire minnekään",
+            "sisältö": "Nulla iaculis ex odio, sit amet mollis lorem ullamcorper vitae. Vivamus mattis, urna ac pretium varius, nisl nulla lobortis turpis, nec hendrerit enim magna ut diam. In hac habitasse platea dictumst. Morbi rutrum cursus mi ac euismod. Cras vel interdum nunc. Suspendisse aliquam interdum ornare. Proin ac purus et neque interdum molestie quis non nisl. Fusce ultricies sapien sed purus vehicula, at blandit odio interdum. Nunc ac dui pharetra, mollis lorem quis, vulputate tortor. Etiam ultrices nunc mauris, nec faucibus justo condimentum non.",
+            "päivämäärä": "4.2."
             }
 
 
