@@ -1,22 +1,35 @@
-var muuttuja = 1;
+var muuttuja = 0; 
 
-$.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
-    console.log(data);
-});
-
-/* function display() {
+ function display() {
     'use strict';
-    $.getJSON("https://kulmalm5.firebaseio.com/.json", function (data) {
-        $('#otsikko').html(data.uutiset[muuttuja].otsikko);
-        $('#paivamaara').html(data.uutiset[muuttuja].paivamaara);
-        $('#sisalto').html(data.uutiset[muuttuja].sisalto);
+    $.getJSON("https://kulmalm5.firebaseio.com/uutiset.json", function (data) {
+        $('#otsikko').html(data[muuttuja].otsikko); 
+        $('#päivämäärä').html(data[muuttuja].päivämäärä);
+        $('#sisältö').html(data[muuttuja].sisältö);
     });
-}
+};
 
-function switchA() {
+function nextSlide() {
+    'use strict';
+    if (muuttuja < 2) {
+        muuttuja += 1;
+    } else {
+        muuttuja = 0;
+    }
+    display();
+};
+
+function switch() {
     'use strict';
     setInterval(function () {
         nextSlide();
-    }, 3000);
-}
-    */
+    }, 3500);
+};
+
+window.onload = function () { 
+    'use strict';
+     display();
+     nextSlide();
+     switch();
+};
+
