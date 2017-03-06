@@ -17,6 +17,7 @@ function saveContent() {
     }
 }
 
+
  function display() {
     'use strict';
     $.getJSON("https://kulmalm5.firebaseio.com/uutiset.json", function (data) {
@@ -26,6 +27,14 @@ function saveContent() {
     });
 };
 
+function animate() {
+    'use strict'; 
+    $('.animation').fadeOut('slow', function() {
+        display();
+        $('.animation').fadeIn('slow');
+    });
+}
+
 function next() {
     'use strict';
     if (muuttuja < 2) {
@@ -33,6 +42,7 @@ function next() {
     } else {
         muuttuja = 0;
     }
+    animate();
     display();
 };
 
@@ -43,6 +53,7 @@ function previous() {
     } else {
         muuttuja -= 1;
     }
+    animate();
     display();
 };
 
