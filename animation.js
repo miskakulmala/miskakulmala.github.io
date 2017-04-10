@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
   var width = window.innerWidth - 25;
   var height = window.innerHeight - 25;
@@ -41,8 +38,6 @@ function getMousePos(canvas, evt) {
   });
   canvas.addEventListener("mousedown", function(e){
      removeEnemy(getMousePos(canvas,e).x, getMousePos(canvas,e).y);
-     console.log("MOUSEX" + e.pageX)
-      console.log("MOUSEy" + e.pageY)
   })
   
   

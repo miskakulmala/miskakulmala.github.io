@@ -24,11 +24,11 @@ var enemies = [];
 function drawEnemies(context) {
  console.log(enemies.length)
   for(i = 0; i < enemies.length; i++){
-  var e = enemies[i];
+  var vihu = enemies[i];
   
   context.beginPath();
   context.fillStyle = 'green';
-  context.arc(e.x,e.y,e.r,0,2*Math.PI);
+  context.arc(vihu.x,vihu.y,vihu.r,0,2*Math.PI);
   context.fill();
   context.closePath();  
   }
@@ -39,51 +39,51 @@ function drawEnemies(context) {
 
 function moveEnemies() {
      for(i = 0; i < enemies.length; i++){
-         var e = enemies[i];
-         var oldX = e.x;
-         var oldY = e.y;
-         e.x = e.x + (e.dir.x * e.speed);
-         e.y = e.y + (e.dir.y * e.speed);
+         var vihu = enemies[i];
+         var oldX = vihu.x;
+         var oldY = vihu.y;
+         vihu.x = vihu.x + (vihu.dir.x * vihu.speed);
+         vihu.y = vihu.y + (vihu.dir.y * vihu.speed);
          
-         if(e.x < e.r){
-             e.x = e.r;
-             e.dir = new direction(Math.PI - (e.dir.ang % (2 * Math.PI)) );
+         if(vihu.x < vihu.r){
+             vihu.x = vihu.r;
+             vihu.dir = new direction(Math.PI - (vihu.dir.ang % (2 * Math.PI)) );
          }
-         if(e.x > width - e.r){
-             e.x = width - e.r;
-             e.dir = new direction(Math.PI - (e.dir.ang % (2 * Math.PI)) );
+         if(vihu.x > width - vihu.r){
+             vihu.x = width - vihu.r;
+             vihu.dir = new direction(Math.PI - (vihu.dir.ang % (2 * Math.PI)) );
              
          }
-         if(e.y < e.r){
-             e.y = e.r;
-             e.dir = new direction(-e.dir.ang);
+         if(vihu.y < vihu.r){
+             vihu.y = vihu.r;
+             vihu.dir = new direction(-vihu.dir.ang);
          }
-         if(e.y > height - e.r){
-             e.y = height - e.r;
-             e.dir = new direction(-e.dir.ang);
+         if(vihu.y > height - vihu.r){
+             vihu.y = height - vihu.r;
+             vihu.dir = new direction(-vihu.dir.ang);
          }
          
          for(k = 0; k < enemies.length; k++){
-            var distance = Math.sqrt(Math.pow((e.x-enemies[k].x),2) + Math.pow((e.y - enemies[k].y),2));
-             if (!(e.x == enemies[k].x && e.y == enemies[k].y)){
+            var distance = Math.sqrt(Math.pow((vihu.x-enemies[k].x),2) + Math.pow((vihu.y - enemies[k].y),2));
+             if (!(vihu.x == enemies[k].x && vihu.y == enemies[k].y)){
                  
-                  if(distance < 2 * e.r){
-                 e.x = oldX;
-                 e.y = oldY;
+                  if(distance < 2 * vihu.r){
+                 vihu.x = oldX;
+                 vihu.y = oldY;
                  var angle = 0;
                  var en = enemies[k];
                       
-                 if(e.x >= en.x && e.y <= en.y){
-                     angle = Math.atan((e.y - en.y)/(e.x - en.x));      
-                 } else if(e.x <= en.x && e.y <= en.y){
-                     angle = Math.atan((e.y - en.y)/(e.x - en.x)) + Math.PI;
-                 } else if(e.x >= en.x && e.y >= en.y){
-                     angle = Math.atan((e.y - en.y)/(e.x - en.x));
-                 } else if(e.x <= en.x && e.y >= en.y){
-                     angle = Math.atan((e.y - en.y)/(e.x - en.x)) + Math.PI;
+                 if(vihu.x >= en.x && vihu.y <= en.y){
+                     angle = Math.atan((vihu.y - en.y)/(vihu.x - en.x));      
+                 } else if(vihu.x <= en.x && vihu.y <= en.y){
+                     angle = Math.atan((vihu.y - en.y)/(vihu.x - en.x)) + Math.PI;
+                 } else if(vihu.x >= en.x && vihu.y >= en.y){
+                     angle = Math.atan((vihu.y - en.y)/(vihu.x - en.x));
+                 } else if(vihu.x <= en.x && vihu.y >= en.y){
+                     angle = Math.atan((vihu.y - en.y)/(vihu.x - en.x)) + Math.PI;
                  }
              
-             e.dir = new direction(angle);
+             vihu.dir = new direction(angle);
              en.dir = new direction(angle + Math.PI)
                       
                       
@@ -91,30 +91,25 @@ function moveEnemies() {
            }
          }
          
-         if(Math.sqrt(Math.pow((e.x-p.x),2) + Math.pow((e.y-p.y),2)) < p.r + e.r){
-             e.x = oldX;
-             e.y = oldY;
+         if(Math.sqrt(Math.pow((vihu.x-ukko.x),2) + Math.pow((vihu.y-ukko.y),2)) < ukko.r + vihu.r){
+             vihu.x = oldX;
+             vihu.y = oldY;
              var angle = 0;
              
-                 if(e.x >= p.x && e.y <= p.y){
-                     angle = Math.atan((e.y - p.y)/(e.x - p.x));      
-                 } else if(e.x <= p.x && e.y <= p.y){
-                     angle = Math.atan((e.y - p.y)/(e.x - p.x)) + Math.PI;
-                 } else if(e.x >= p.x && e.y >= p.y){
-                     angle = Math.atan((e.y - p.y)/(e.x - p.x));
-                 } else if(e.x <= p.x && e.y >= p.y){
-                     angle = Math.atan((e.y - p.y)/(e.x - p.x)) + Math.PI;
+                 if(vihu.x >= ukko.x && vihu.y <= ukko.y){
+                     angle = Math.atan((vihu.y - ukko.y)/(vihu.x - ukko.x));      
+                 } else if(vihu.x <= ukko.x && vihu.y <= ukko.y){
+                     angle = Math.atan((vihu.y - ukko.y)/(vihu.x - ukko.x)) + Math.PI;
+                 } else if(vihu.x >= ukko.x && vihu.y >= ukko.y){
+                     angle = Math.atan((vihu.y - ukko.y)/(vihu.x - ukko.x));
+                 } else if(vihu.x <= ukko.x && vihu.y >= ukko.y){
+                     angle = Math.atan((vihu.y - ukko.y)/(vihu.x - ukko.x)) + Math.PI;
                  }
              
-             e.dir = new direction(angle)
+             vihu.dir = new direction(angle)
          }
          
      }
-}
-
-function changeSpeed(e,am) {
-    eSpeed = am;
-    e.speed = am;
 }
 
 function getRandomInteger( min, max ){
@@ -128,7 +123,6 @@ var canAdd = true;
 
 
 function addEnemy() {
-    
     
     if(canAdd){
     var newX = 0;
@@ -147,8 +141,8 @@ function addEnemy() {
                     flag = false;
                 }  
         }
-        var distance = Math.sqrt(Math.pow((newX - p.x),2) + Math.pow((newY - p.y),2));
-        if(distance < eSize + p.r){
+        var distance = Math.sqrt(Math.pow((newX - ukko.x),2) + Math.pow((newY - ukko.y),2));
+        if(distance < eSize + ukko.r){
             flag = false;
         }
         counter = counter + 1;
@@ -156,13 +150,9 @@ function addEnemy() {
         if(counter >= 1000) canAdd = false;
         
     }
-    if(counter < 1000){
-        
-      
-    var dir = (parseFloat(getRandomInteger(0,360)) / 360) * 2* Math.PI;
-    
-    enemies.push(new enemy(newX, newY, eSize, eSpeed, new direction(dir)));
-    
+    if(counter < 1000){   
+     var dir = (parseFloat(getRandomInteger(0,360)) / 360) * 2* Math.PI;
+     enemies.push(new enemy(newX, newY, eSize, eSpeed, new direction(dir)));
     }
 }
 }

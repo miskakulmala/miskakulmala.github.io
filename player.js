@@ -10,69 +10,67 @@ function player(x,y,r,speed) {
 var width = window.innerWidth - 25;
 var height = window.innerHeight - 25;
 
-var p = new player(width / 2,height / 2,20,4); 
+var ukko = new player(width / 2,height / 2,20,5); 
 
 function drawPlayer(context) {
-  var x = p.x;
-  var y = p.y;
+  var x = ukko.x;
+  var y = ukko.y;
   context.beginPath();
   context.fillStyle = '#000000';
-  context.arc(x,y,p.r,0,2*Math.PI);
+  context.arc(x,y,ukko.r,0,2*Math.PI);
   context.fill();
   context.closePath();
 }
 
-
-
-
-
 function movePlayer(dir) {
-    var oldX = p.x;
-    var oldY = p.y;
+    var oldX = ukko.x;
+    var oldY = ukko.y;
   switch (dir) {
-    case "left": 
-      p.x -= p.speed;
-      if (p.x < p.r) {
-        p.x = p.r;
-          
+    
+    case "right":
+      ukko.x += ukko.speed;
+      if (ukko.x > width - ukko.r) {
+        ukko.x = width - ukko.r;
       }
       break;
-    case "right":
-      p.x += p.speed;
-      if (p.x > width - p.r) {
-        p.x = width - p.r;
+    case "left": 
+      ukko.x -= ukko.speed;
+      if (ukko.x < ukko.r) {
+        ukko.x = ukko.r;
       }
       break;
     case "up":
-      p.y -= p.speed;
-      if (p.y < p.r) {
-        p.y = p.r;
+      ukko.y -= ukko.speed;
+      if (ukko.y < ukko.r) {
+        ukko.y = ukko.r;
       }
       break;
     case "down":
-      p.y += p.speed;
-      if (p.y > height - p.r) {
-        p.y = height - p.r;
+      ukko.y += ukko.speed;
+      if (ukko.y > height - ukko.r) {
+        ukko.y = height - ukko.r;
       }
       break;
   }
     for(k = 0; k < enemies.length; k++){
-        var distance = Math.sqrt(Math.pow((p.x - enemies[k].x),2) + Math.pow((p.y - enemies[k].y),2))
-        if(distance < p.r + enemies[k].r){
-            p.x = oldX;
-            p.y = oldY;
+        var distance = Math.sqrt(Math.pow((ukko.x - enemies[k].x),2) + Math.pow((ukko.y - enemies[k].y),2));
+        if(distance < ukko.r + enemies[k].r){
+            ukko.x = oldX;
+            ukko.y = oldY;
         }
     }
   }
 
 
 function changeSpeed(yas) {
-    p.speed = yas;
+    if (ukko.speed >= 5 || yas >= 0) {
+    ukko.speed += yas;
+    } 
 }
 
 function reset() {
-    p.x = 200;
-    p.y = 200;
-    p.speed = 20;
+    ukko.x = width / 2;
+    ukko.y = height / 2;
+    ukko.speed = 5;
 }
 
