@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8"/>
+        <title>Game</title>
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="phaser.js" type="text/javascript"></script>
+        <script src="states/boot.js" type=text/javascript></script>
+        <script src="states/preload.js" type=text/javascript></script>
+        <script src="states/menu.js" type="text/javascript"></script>
+        <script src="states/game.js" type="text/javascript"></script>
+        <script src="states/gameover.js" type="text/javascript"></script>
+        <script src="states/help.js" type="text/javascript"></script>
+        <script>
+            var game = new Phaser.Game(800, 600, Phaser.AUTO,'game');
+            game.state.add("Boot",boot);
+            game.state.add("Preload",preload);
+			game.state.add("GameTitle",menu);
+            game.state.add("TheGame",theGame);
+            game.state.add("Help",help);
+            game.state.add("GameOver",gameOver);
+            game.state.start("Boot");    
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
